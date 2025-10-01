@@ -24,7 +24,7 @@ https://docs.docker.com/desktop/setup/install/mac-install/
 In first place you have to clone this repo, using git (or Visual Studio Code)
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/jyefi/fichajegdh
 ```
 
 
