@@ -1,2 +1,3 @@
 cypress.config.js
 node_modules
+cypress/logs/warning.log
