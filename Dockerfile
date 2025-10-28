@@ -3,7 +3,8 @@ FROM cypress/base:22.20.0
 WORKDIR /app
 
 # Copia los ficheros para instalar dependencias
-COPY package.json package-lock.json cypress.config.js ./
+#Se omite la carpeta cypress.js dado que ahí deben estar las credenciales del usuario
+COPY package.json package-lock.json /app/
 
 # Utiliza como volumen la carpeta cypress del host
 VOLUME ["/app/cypress"]

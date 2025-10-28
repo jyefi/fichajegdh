@@ -29,7 +29,9 @@ git clone https://github.com/jyefi/fichajegdh
 
 
 ## Config Setup
-After Docker install you have to use a credentials file. This project includes "cypress.config.js.example" with the structure, you can copy the file into cypress.config.js, using your own credentials to check in and checkout. Those credentials will be used in check in and check out process. The credentials are stored in text clear (case sensitive).
+After Docker install you have to use a credentials file. This project includes "cypress.config.js.example" with the structure, you can copy into "cypress.config.js", using your own credentials to check in and checkout. Those credentials will be used in check in and check out process. The credentials are stored in text clear (case sensitive).
+
+YOU MUST USE A cypress.config.js FILE IN THE PROJECT ROOT with your own credentials, otherwise the program will not work.
 
 ## Docker build
 After clone the repository, to implement node setup, you have to complile docker image using this command:
@@ -40,7 +42,9 @@ docker build --pull --rm -f 'Dockerfile' -t 'fichajegdh:1.0' '.'
 ## Execution files
 In the project files you can find some helpers to automate the execution of check-in and check-out process. You can program with crontab (Linux) or Task scheduler (Windows), to program the scripts to be executed between 1 and 20 minutes before the time limit.
 
-For example, if your worktime starts at 09:00, you have to program to execute the script at 08:40. In that way, the script will be executed between 08:40 and 09:00
+If your worktime starts at 09:00, you have to program to execute the script at 08:40. In that way, the script will be executed between 08:40 and 09:00
+Example:
+
 
 ## Execution results
 The execution results will be stored in cypress/logs/warning.log file. And also, you can check the result in the gdh system.
